@@ -1,1 +1,0 @@
-#Simple Portfolio Website made with React and Tailwind
