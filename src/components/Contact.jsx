@@ -1,44 +1,21 @@
 import React from "react";
+import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div
-      className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-8"
-      id="contact"
-    >
-      <h1 className="text-center text-6xl font-bold text-teal-600">
-        Get in Touch
-      </h1>
+    <div className="contact-container" id="contact">
+      <h1 className="contact-heading">Get in Touch</h1>
 
-      <form className="flex w-full max-w-md flex-col gap-8 rounded-lg p-6 md:max-w-lg lg:max-w-xl">
-        <div className="flex flex-col gap-4">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            className="rounded-lg border-2 border-teal-400 px-4 py-3 text-lg outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"
-          />
-          <input
-            type="text"
-            name="surname"
-            placeholder="Your Surname"
-            className="rounded-lg border-2 border-teal-400 px-4 py-3 text-lg outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            className="rounded-lg border-2 border-teal-400 px-4 py-3 text-lg outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"
-          />
+      <form className="contact-form">
+        <div className="contact-input-group">
+          <input type="text" name="name" placeholder="Your Name" className="contact-input" />
+          <input type="text" name="surname" placeholder="Your Surname" className="contact-input" />
+          <input type="email" name="email" placeholder="Your Email" className="contact-input" />
         </div>
 
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          className="h-32 w-full resize-none rounded-lg border-2 border-teal-400 px-4 py-3 text-lg outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"
-        ></textarea>
+        <textarea name="message" placeholder="Your Message" className="contact-textarea"></textarea>
 
-        <button className="rounded-lg border-2 border-teal-400 bg-teal-500 px-6 py-3 font-semibold text-white shadow-md transition-all duration-200 hover:bg-teal-600">
+        <button type="submit" className="contact-button">
           Send Message
         </button>
       </form>
